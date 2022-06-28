@@ -1,0 +1,15 @@
+h1,h2,a{
+    color:red;
+}
+ol,p,ul{
+    color:brown;
+}
+.yb{
+    background-color: yellow;
+}
+ul{
+    letter-spacing: 8px;
+}
+.pad{
+    padding: 10px;
+}
