@@ -1,0 +1,118 @@
+.s1{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    background-image: linear-gradient(to right,red ,green,yellow);
+}
+.s2{
+    padding:0px 300px;
+    background-color: cadetblue;
+    border: 5px solid red;
+    width:200px;
+    margin:0px auto;
+    border-radius: 20px;
+}
+.s3{
+    border: 1px solid brown;
+    border-radius: 20px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.s3child{
+    width:400px;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: aqua;
+    
+}
+.s4{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+    background-image: linear-gradient(to right,red,yellow,red);
+}
+.s5{
+    height:300px;
+    border: 1px solid green;
+    background-image: radial-gradient(blue, lightgreen);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.s5c{
+    text-align: center;
+    height:120px;
+    width:200px;
+    color:brown;
+    font-weight: bold;
+    border:2px solid red;
+    border-radius: 10px;
+    background-color: yellow;
+}
+.s6{
+    border:1px solid black;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto 100px;
+    grid-template-rows: auto 70px auto auto;
+}
+.g1{
+    padding:10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.g2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: lightgreen;
+} 
+.g3{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: dodgerblue;
+}
+.g4{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: slateblue;
+}
+.g5{
+    color:white;
+    background-color: black;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.g6{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    background-color: darkorange;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.g7{
+    text-align: center;
+    font-size: 20px;
+    background-color: cadetblue;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
