@@ -1,0 +1,102 @@
+.l1c{
+    height:100px;
+    width:100px;
+    background-color: cadetblue;
+    margin: 30px;
+    transition: all;
+    animation: l1 4s linear alternate infinite;
+}
+.l1{
+    width:500px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes l1{
+    from{
+        transform: skewX(20deg);
+    }
+    to{
+        transform:skewX(-20deg);
+    }
+}
+.c2{
+    background-color: gray;
+    animation: l2 2s linear alternate infinite;
+}
+@keyframes l2{
+    from{
+        transform: skewY(20deg);
+    }
+    to{
+        transform: skewY(-20deg);
+    }
+}
+.c3{
+    background-color: cadetblue;
+    animation: l3 4s ease-out  infinite;
+}
+@keyframes l3{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.c41{
+    background-color: cadetblue;
+    animation: l41 4s alternate  infinite;
+}
+@keyframes l41{
+    from{
+        height: 100px;
+    }
+    to{
+        height: 50px;
+    }
+}
+.c42{
+    background-color: brown;
+    animation: l42 4s alternate  infinite;
+}
+@keyframes l42{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 30px;
+    }
+}
+.c43{
+    background-color: limegreen;
+    animation: l43 4s alternate ease-out infinite;
+}
+@keyframes l43{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(100deg);
+    }
+}
+.h{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.l{
+    margin-left: 30vw;
+}
+a{
+    font-size: 40px;
+    color: maroon;
+    display: block;
+    text-align: center;
+}
+html{
+    background-color: yellow;
+}

@@ -1,0 +1,80 @@
+.list-item{
+    height:100px;
+    width:100px;
+    background-color:limegreen;
+    margin:20px;
+}
+.l1{
+    
+    transition: width 2s ;
+}
+.l1:hover {
+    width: 300px;
+}
+.l2{
+    transition: width 3s ,height 2s 1s;
+}
+.l2:hover {
+    width:300px;
+    height:300px;
+}
+.l3{
+    
+    transition: width 2s ease;
+}
+.l3:hover {
+    width: 300px;
+}
+.l4{
+    
+    transition: width 2s ease-in;
+}
+.l4:hover {
+    width: 300px;
+}
+.l5{
+    
+    transition: width 2s ease-out;
+}
+.l5:hover {
+    width: 300px;
+}
+.l6{
+    
+    transition: width 2s ease-in-out;
+}
+.l6:hover {
+    width: 300px;
+}
+.l7{
+    
+    transition: width 2s linear;
+}
+.l7:hover {
+    width: 300px;
+}
+.h{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.list{
+    width:220px;
+    margin: 0px auto;
+}
+.back{
+    font-size: 40px;
+    color: maroon ;
+    display: block;
+    text-align: center;
+}
+.next{
+    font-size: 40px;
+    color: blue ;
+    display: block;
+    text-align: center;
+}
+html{
+    background-color: yellow;
+}
