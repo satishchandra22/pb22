@@ -1,0 +1,53 @@
+button{
+    width: 200px;
+    height: 40px;
+    background-color: dodgerblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    transition: all;
+}
+
+button:hover{
+    background-color: blue;
+}
+.e1{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 40px;
+}
+
+.e2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+.e3{
+    height:100px;
+    width:100px;
+    background-color: chartreuse;
+    transition: width 2s;
+}
+.e3:hover{
+    width:200px
+}
+.e4{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    background-color: plum;
+}
+.e5{
+    width:100px;
+    height:100px;
+    animation: e5 alternate infinite linear 3s;
+}
+@keyframes e5 {
+    from{
+        background-color: coral;
+        border-radius: 0%;
+    }
+    to{
+        background-color:limegreen;
+        border-radius: 50%;
+    }
+}

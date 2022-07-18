@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS concept and Implimentation</title>
+    <link rel="stylesheet" href="css_impliment_easy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik+Moonrocks&display=swap');
+    </style>
+        
+</head>
+<body>
+    <h2>CSS Concepts</h2>
+    <b>1. Difference between flex row and column</b>
+    <p>Flex flow is a flex container property and choosed based on how one wants to placed 
+        child elements one by one. if you place child elements in row manner, x asis becomes 
+        main axis, for column manner, y axis becomes main axis and other becomes cross axis.</p>
+    <b>2.Explain inline, internal ans external stylesheet</b>
+    <p>
+        We can style html element in 3 ways which are inline, internal, external styling.
+    inline styling is writting css style in style attribute of html element. it has 
+    heigst priority among other styling types. <br>
+    internal styling is giving by style tag inside head tag. Internal has second 
+    heighest priority. <br>
+    In external styling, external style sheet to be created and linked to html document by
+    link tag in head of the file.
+    </p>
+    <b>3. Justify content alowsyou todo what?</b>
+    <p>Justify content is a flexcontainer property which is used to align items according to
+        main axis of container. there are 6 values it can take.</p> 
+    <b>4. Difference between absolute and relative positioning</b>
+    <p>Relative is used to position the element relative to its original position assigned 
+        by the browser. absolute position is done relative to the nonstatic parent element.</p>
+    <b>5. What is grid-template-columns used for?</b>
+    <p>grid-template-column is a grid container property which defines number of columns
+        and their widths. it takes width of columns and number of values given is taken
+        as number of columns with respective width.</p>
+    <b>6. What is z-index in CSS?</b>
+    <p>using z-index property, you can define how elemnts haveto be placed in ovelaping
+        situation. element having higher index is placed over lower index elemnet.
+        it is applied only to nonstatic elements. ie. position property should be given
+        either absolute or relative or fixed or sticky.</p>
+    <b>7. What is differnce between padding and margin?</b>
+    <p>these are two properties of css elements and defines cssbox model. margin defines
+        space between border and an other element. it is the space putside the border.
+        padding define space between content and border. margin can take both positive
+        and negetive values. padding takes only possitive values. using margin,element size 
+        does not change, while padding changes the size of the element.</p>
+    <b>8. What is box sizing?</b>
+    <p>it defines how height and width applied to element. it takes two values, content box
+        and border box. content box is default. it exludes the padding, border and margin
+        whereas border box includes all these three.</p>
+
+    <p>tip: *{ margin:0; padding: 0; box-sizing : border-box} this has to be written in 
+        every css file.</p>
+    <b>9. What is animation delay?</b>
+    <p>it is a css animation property, it specifies how long animation should wait before 
+        it's start. 
+    </p>
+    <b>10. Which property you will use to merge celss vertically in grid?</b>
+    <p> grid column start and grid column end are used on grid container child elenent,
+        grid-column is short hand notation for this.</p>
+    <b>11. Which property you will use to merge cells horizontally in grid?</b>
+    <p> grid row start and grid row end are used on grid container child elenent,
+        grid-row is short hand notation for this.</p>
+    <b>12. Explain CSS box model?</b>
+    <p>it is set of rules which tells how elements should be rendered on browser.
+        it defines four boxes content area, paddong border and margin.</p>
+    <b>13. what is the difference between display none and visibility hidden?</b>
+    <p>both are used to hide elements. visibility hidden hides without effecting its space 
+        while display none deletes the space of the element. </p>
+    <h2>CSS Implementation Easy</h2>
+    <b>1. Replicate the button on Masthead of PrepBytes.</b><br>
+    <button>Enroll Now</button><br>
+    <p><b>2. Write a text and add any google font </b></p>
+    <p>There are two ways to add google fonts. one by link and other by import and both
+        has to be copied to head tag of html document.
+    </p>
+    <span class="e1"> Elevation Academy</span><br>
+    <span class="e2"> PrepBytes</span>
+    <p><b>3. create a box and increase its width on hover , add transition on hover</b></p>
+    <div class="e3"></div>
+    <p><b>4. Create a circle using border radius </b></p>
+    <div class="e4"></div>
+    <p><b>5. Write code to show implementation of media queries</b></p>
+    <code>
+        <pre>@media (max-width:1000px) and (min-width:640px){
+            css-property: value;
+            css-property: value;
+            css-property: value;
+        }
+        </pre>
+    </code>
+    <p><b>6. Write code to show any animation example</b></p>
+    <pre><code>
+        .e5{
+            width:100px;
+            height:100px;
+            animation: e5 alternate infinite linear 5s;
+        }
+        @keyframes e5 {
+            from{
+                background-color: coral;
+                border-radius: 0%;
+            }
+            to{
+                background-color: goldenrod;
+                border-radius: 50%;
+            }
+        }
+    </code></pre>
+    <div class="e5"></div>
+
+</body>
+</html>
