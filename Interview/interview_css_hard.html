@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS implimentation-hard</title>
+    <link rel="stylesheet" href="interview_css_hard.css">
+</head>
+<body>
+    <h2>CSS Implimentation - Hard</h2>
+    <p><b>1. Create masterhead - add background image and put a text at the center , with button below it </b></p>
+    <div class="e1">
+        <span class="e1t">TEXT</span><br>
+        <button class="e1b" >BUTTON</button>
+    </div>
+    <p><b>2. Create header -- left side will have logo and right side will have 4 button </b></p>
+    <div class="e2">
+        <div class="e2d"></div>
+        <div>
+        <button class="b1 b">Button1</button>
+        <button class="b2 b">Button2</button>
+        <button class="b3 b">Button3</button>
+        <button class="b4 b">Button4</button>
+        </div>
+    </div>
+    <p><b>3. Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view</b></p>
+    <div class="e3">
+        <div class="e3d1 e3c"><span class="e3t">HTML</span></div>
+        <div class="e3d2 e3c"><span class="e3t">CSS</span></div>
+        <div class="e3d3 e3c"><span class="e3t">JAVA SCRIPT</span></div>
+    </div>
+    <p><b>4. Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad</b></p>
+    <button class="e4">Enroll Now</button>
+    <p><b>5. Write code to show implementation of flex</b></p>
+    <pre><code>
+        .e5c{
+            width:100px;
+            height:100px;
+            background-color: saddlebrown;
+            box-shadow: 5px 5px 15px gray;
+        }
+        .e5{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    </code></pre>
+    <div class="e5">
+        <div class="e5c"></div>
+        <div class="e5c"></div>
+        <div class="e5c"></div>
+        <div class="e5c"></div>
+        <div class="e5c"></div>
+    </div>
+    <p><b>6. Show implementation of transition</b></p>
+    <pre><code>
+        .e6{
+            height:100px;
+            width:100px;
+            background-color: steelblue;
+            transition: transform 2s, width 1s ,background-color 1s;
+            transform: rotate(0deg);
+        }
+        .e6:hover{
+            transform: rotate(180deg);
+            background-color: turquoise;
+            width:200px;
+        }
+    </code></pre>
+    <div class="e6"></div>
+    <p><b>7. Show implementation of transformation</b></p>
+    <div class="e7"></div>
+    <p><b>8. Show implementation of grid</b></p>
+    <div class="e8">
+        <div class="e8c e8d1"></div>
+        <div class="e8c e8d2"></div>
+        <div class="e8c e8d3"></div>
+        <div class="e8c e8d4"></div>
+        <div class="e8c e8d5"></div>
+        <div class="e8c e8d6"></div>
+    </div>
+</body>
+</html>
