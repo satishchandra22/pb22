@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <h2>Javascript Declerarions</h2>
+    <p>there are three types of declerations</p>
+    <ul>
+        <li>var</li>
+        <li>const</li>
+        <li>let</li>
+    </ul>
+    <p>var - var is a variable decleration for global variable</p>
+    <p>const - const is for constant variables. you canot change the values of const variable</p>
+    <p>let - let is for local varible which takes block scope for the perticular 
+        declared varible. it is highly recomended to use let instead of var.
+    </p>
+
+    <h2>Hoisting in javascript</h2>
+    <p>You always need to declare variables at the top of the file. if you do not declare variable
+        and call it, its value will be undefined. <br>
+        this cannot happen in case of functions. functions can be written in any where.
+        each function invokes an execution context container. 
+    </p>
+    <p>functions can be defined in three ways</p>
+    <code><pre>
+        function name(){
+            ......
+        }
+
+
+        let name=function(){
+            .......
+        }
+
+        let name= function () => {
+            ......
+        }
+    </pre></code>
+</body>
+</html>
