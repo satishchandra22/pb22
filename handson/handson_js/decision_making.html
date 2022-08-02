@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        assesment 2
+
+
+const Calculator = (A, B, C) => 
+{
+	
+  let out; 
+ switch(A) {
+      case '+':
+      out=B+C;
+      break;
+
+      case '-':
+      out=B-C;
+      break;
+
+      case '*':
+      out=B*C;
+      break;
+
+      case '/':
+      out=B/C;
+      break;
+}
+ return out;
+}
+
+
+const Check_divisibility = (N) => {
+    
+  return (N%6===0 && N%9===0) ? 'Divisible by both':'Not Divisible by both';
+};
+
+
+const isEligible = (a) => {
+  return a>=18 ? 'Eligible for Voting': 'Not Eligible for Voting';
+};
+
+const findRelation = (x,y) => {
+  if (x<y){
+    return x+' is smaller than '+y
+  }else if (x>y){
+    return x+' is greater than '+y
+  }else {
+    return x+' is equal to '+y
+  }
+};
+
+
+const findGrades = (a) => {
+  if (a<=10){
+    return 'E'
+  }else if (a<=20){
+    return 'D'
+  }else if (a<=30){
+    return 'C'
+  }else if (a<=40){
+    return 'B'
+  }else {
+    return 'A'
+  }
+};
+
+
+const getValue = (a) => {
+  if (a==='P' || a==='p'){
+    return 'PrepBytes'
+  }else if (a==='Z' || a==='z'){
+    return 'Zenith'
+  }else if (a==='E' || a==='e'){
+    return 'Expert Coder'
+  }else if (a==='D' || a==='d'){
+    return 'Data Structure'
+  }
+};
+
+
+const Max_out_of_three = (A,B,C) => {
+  if (A===B && A===C){
+    return -1
+  } else if (B>=A && B>=C){
+    return B
+  } else if (A>=B && A>=C){
+    return A
+  } else{
+    return C
+  }
+
+};
+
+
+const findSndSmallest = (x,y,z) => {
+   if((x < y && y < z) || (z < y && y < x)){
+     return y;
+   }else if((y < x && x < z) || (z < x && x < y)){
+     return x;
+   }else{
+     return z;
+   } 
+};
+
+
+const Triangle_Check = (A,B,C) => {
+   
+    if (A>90 || B>90 || C>90) {
+      return "obtuse";
+    }else {
+      return "acute";
+    }
+
+    
+};
+
+    </pre>
+</body>
+</html>
