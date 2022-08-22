@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <title>DOM Handson</title>
+</head>
+<body>
+    <p><b>1. Write the code to access element which is having id as "text"</b></p>
+    <p id="text">This is a Paragraph with id 'text'</p>
+    <p>Check console</p>
+    <p><b>2. Write the code to access element which is having tag as "h1"</b></p>
+    <h1>This is h1 Tag</h1>
+    <p>Check console</p>
+    <p><b>3. Write the code to access element which is having class as "box"</b></p>
+    <p class="box">This is a paragraph with class box.</p>
+    <p>Check console</p>
+    <p><b>4.</b></p>
+    <h1>Hello</h1>
+
+    <p><b>5. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</b></p>
+    <div class="container">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <button id="button" onclick="change()">Change Flex Direction</button>
+    
+    <p><b>6. What's the difference between window vs document?</b></p>
+    <p>Document Object: The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.</p>
+
+    <p>Window Object: The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. </p>
+
+    <p><b>7. Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</b></p>
+    <h1>Hello</h1>
+
+    <p><b>8. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</b></p>
+    <h1>Hello world</h1>
+    <button onclick="changeText()">Replace Text</button>
+
+    <p><b>9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</b></p>
+    <div id="timer"></div>
+
+    <p><b>10. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</b></p>
+    <select id="slector" onchange="print()">
+        <option selected="selected">18-19</option>
+        <option>19-20</option>
+        <option>20-21</option>
+        <option>21-22</option>
+    </select>
+    <p id="print">selcted year is </p>
+
+    <script src="dom.js"></script>
+</body>
+</html>
