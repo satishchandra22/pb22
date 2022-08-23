@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="digi_clock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="s">
+        <div class="s1">
+            <div class="s1c1">
+    
+            </div>
+            <div class="s2c2">
+                <div class="s2c2g1 s2c2g">
+                    <div class="small_logo1"></div>
+                    <div class="reminder_text">
+                        <span>Set wake up time</span>
+                    </div>
+                    <div class="time_options">
+                        <select class="alarmtime" onchange="selected_time()" >
+                            <option >10 AM - 11 AM</option>
+                            <option >11 AM - 12 AM</option>
+                            <option >12 PM - 01 PM</option>
+                            <option >01 PM - 02 PM</option>
+                            <option >02 PM - 03 PM</option>
+                            <option >03 PM - 04 PM</option>
+                            <option >04 PM - 05 PM</option>
+                            <option >05 PM - 06 PM</option>
+                            <option >06 PM - 07 PM</option>
+                            <option >07 PM - 08 PM</option>
+                            <option >08 PM - 09 PM</option>
+                            <option >09 PM - 10 PM</option>
+                            <option >10 PM - 11 PM</option>
+                            <option >11 PM - 00 AM</option>
+                            <option >00 AM - 01 AM</option>
+                            <option >01 AM - 02 AM</option>
+                            <option >02 AM - 03 AM</option>
+                            <option >03 AM - 04 AM</option>
+                            <option >04 AM - 05 AM</option>
+                            <option >05 AM - 06 AM</option>
+                            <option >06 AM - 07 AM</option>
+                            <option >07 AM - 08 AM</option>
+                            <option >08 AM - 09 AM</option>
+                            <option >09 AM - 10 AM</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="s2c2g2 s2c2g">
+                    <div class="small_logo2"></div>
+                    <div class="reminder_text">
+                        <span>Set lunch time</span>
+                    </div>
+                    <div class="time_options">
+                        <select class="alarmtime" onchange="selected_time()" >
+                            <option >10 AM - 11 AM</option>
+                            <option >11 AM - 12 AM</option>
+                            <option >12 PM - 01 PM</option>
+                            <option >01 PM - 02 PM</option>
+                            <option >02 PM - 03 PM</option>
+                            <option >03 PM - 04 PM</option>
+                            <option >04 PM - 05 PM</option>
+                            <option >05 PM - 06 PM</option>
+                            <option >06 PM - 07 PM</option>
+                            <option >07 PM - 08 PM</option>
+                            <option >08 PM - 09 PM</option>
+                            <option >09 PM - 10 PM</option>
+                            <option >10 PM - 11 PM</option>
+                            <option >11 PM - 00 AM</option>
+                            <option >00 AM - 01 AM</option>
+                            <option >01 AM - 02 AM</option>
+                            <option >02 AM - 03 AM</option>
+                            <option >03 AM - 04 AM</option>
+                            <option >04 AM - 05 AM</option>
+                            <option >05 AM - 06 AM</option>
+                            <option >06 AM - 07 AM</option>
+                            <option >07 AM - 08 AM</option>
+                            <option >08 AM - 09 AM</option>
+                            <option >09 AM - 10 AM</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="s2c2g3 s2c2g">
+                    <div class="small_logo3"></div>
+                    <div class="reminder_text">
+                        <span>Set nap time</span>
+                    </div>
+                    <div class="time_options">
+                        <select class="alarmtime" onchange="selected_time()" >
+                            <option >10 AM - 11 AM</option>
+                            <option >11 AM - 12 AM</option>
+                            <option >12 PM - 01 PM</option>
+                            <option >01 PM - 02 PM</option>
+                            <option >02 PM - 03 PM</option>
+                            <option >03 PM - 04 PM</option>
+                            <option >04 PM - 05 PM</option>
+                            <option >05 PM - 06 PM</option>
+                            <option >06 PM - 07 PM</option>
+                            <option >07 PM - 08 PM</option>
+                            <option >08 PM - 09 PM</option>
+                            <option >09 PM - 10 PM</option>
+                            <option >10 PM - 11 PM</option>
+                            <option >11 PM - 00 AM</option>
+                            <option >00 AM - 01 AM</option>
+                            <option >01 AM - 02 AM</option>
+                            <option >02 AM - 03 AM</option>
+                            <option >03 AM - 04 AM</option>
+                            <option >04 AM - 05 AM</option>
+                            <option >05 AM - 06 AM</option>
+                            <option >06 AM - 07 AM</option>
+                            <option >07 AM - 08 AM</option>
+                            <option >08 AM - 09 AM</option>
+                            <option >09 AM - 10 AM</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="s2c2g4 s2c2g">
+                    <div class="small_logo4"></div>
+                    <div class="reminder_text">
+                        <span>Set night time</span>
+                    </div>
+                    <div class="time_options">
+                        <select class="alarmtime" onchange="selected_time()" >
+                            <option >10 AM - 11 AM</option>
+                            <option >11 AM - 12 AM</option>
+                            <option >12 PM - 01 PM</option>
+                            <option >01 PM - 02 PM</option>
+                            <option >02 PM - 03 PM</option>
+                            <option >03 PM - 04 PM</option>
+                            <option >04 PM - 05 PM</option>
+                            <option >05 PM - 06 PM</option>
+                            <option >06 PM - 07 PM</option>
+                            <option >07 PM - 08 PM</option>
+                            <option >08 PM - 09 PM</option>
+                            <option >09 PM - 10 PM</option>
+                            <option >10 PM - 11 PM</option>
+                            <option >11 PM - 00 AM</option>
+                            <option >00 AM - 01 AM</option>
+                            <option >01 AM - 02 AM</option>
+                            <option >02 AM - 03 AM</option>
+                            <option >03 AM - 04 AM</option>
+                            <option >04 AM - 05 AM</option>
+                            <option >05 AM - 06 AM</option>
+                            <option >06 AM - 07 AM</option>
+                            <option >07 AM - 08 AM</option>
+                            <option >08 AM - 09 AM</option>
+                            <option >09 AM - 10 AM</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="s1c3">
+                <span class="msg">GOOD MORNING!! WAKE UP!!</span>
+            </div>
+            <div class="s1c4-5">
+                <div class="s1c4">
+                    <span>Set Alarm</span>
+                    <button onclick="setTime()"></button>
+                </div>
+                <div class="s1c5">
+                    <span class="set">Wake Up Time : 10AM - 11AM</span><br>
+                    <span class="set">Lunch Time : 12PM - 1PM</span><br>
+                    <span class="set">Nap Time: 4PM - 5PM</span><br>
+                    <span class="set">Night Time : 8PM - 9AM</span>
+                </div>
+            </div>
+        </div>
+        <div class="s3">
+            <div class="s3c1c">
+                <div class="s3c1">
+                    <div class="s3c1g1">
+                        <span>TIME</span>
+                    </div>
+                    <div class="s3c1g2">
+                        <div class="hours time">
+                            <span class="hour-time">10</span><br>
+                            <span class="hour-text">hours</span>
+                        </div>
+                        <div class="colon ">
+                            <span>:</span>
+                        </div>
+                        <div class="minutes time">
+                            <span class="hour-time">00</span><br>
+                            <span class="hour-text">mins</span>
+                        </div>
+                        <div class="colon">
+                            <span>:</span>
+                        </div>
+                        <div class="seconds time">
+                            <span class="hour-time">01</span><br>
+                            <span class="hour-text">secs</span>
+                        </div>
+                    </div>
+                    <div class="am">
+                        <span id="ampm">AM</span>
+                    </div>
+                </div>
+                <div class="s3c1b1"></div>
+                <div class="s3c1b2"></div>
+            </div>
+            <div class="s3c2">
+                <span class="msg">GRAB SOME HEALTHY BREAKFAST!!!</span>
+            </div>
+            <div class="s3c3"></div>
+        </div>
+    </div>
+<script src="digi_clock.js"></script>
+</body>
+</html>
