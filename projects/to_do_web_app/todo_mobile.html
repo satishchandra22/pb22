@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Web App</title>
+    <link rel="stylesheet" href="todo_mobile.css">
+    <link rel="stylesheet" href="todo_mobile2.css">
+</head>
+<body>
+<div class="t">
+    <div class="s1">
+        <div class="s1c1">
+            <span class="s1c1g1">Tasks</span><span class="s1c1g2" >Lists</span>
+        </div>
+        <div class="s1c2">  
+            <div class="add"><button class="s1c2g1" onclick="plus()" ></button></div>
+            <span class="s1c2g2">Add List</span>
+        </div>
+    </div>
+    <div class="s2">
+        <!-- <div class="s2c s2c1">
+            <div class="add2"><div class="s2c1g1">Trip to Paris</div></div>
+            <div class="s2d2">
+                <div class="task_div">
+                    <div class="task">
+                        <span class="s2c1g3">Completed Task</span>
+                    </div>
+                    <div class="done_b">
+                        <button class="done" onclick="done()">Done</button>
+                    </div>
+                </div>
+                <div class="add_del">
+                    <div class="add_item_div">
+                        <button class="add_item" onclick="plus_item()"></button>
+                    </div>
+                    <div class="del_div">
+                        <button class="del" onclick="del_card()"></button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+<div class="t1">
+    <div align="center">
+        <p class="t1c1">Add New List</p>
+        <input type="text" class="t1c2"><br><br>
+        <button class="t1c3" onclick="add_card()">ADD</button><br><br>
+    </div>
+</div>
+<div class="t1">
+    <div align="center">
+        <p class="t1c1">Add New Item</p>
+        <input type="text" class="t1c2"><br><br>
+        <button class="t1c3" onclick="add_Item()">ADD</button><br><br>
+    </div>
+</div>
+<script src="todo_app.js"></script>
+</body>
+</html>
