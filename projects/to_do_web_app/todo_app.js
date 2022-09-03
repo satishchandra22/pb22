@@ -23,6 +23,7 @@ function add_card(){
     e3[0].style.filter='blur(0px)';
     let e4=document.getElementsByClassName('t1');
     e4[0].style.display='none';
+    document.getElementsByClassName('t1c2')[0].value=null;
 }
 let s;
 function plus_item(){
@@ -51,6 +52,7 @@ let e3=document.getElementsByClassName('t');
 e3[0].style.filter='blur(0px)';
 let e4=document.getElementsByClassName('t1');
 e4[1].style.display='none';
+document.getElementsByClassName('t1c2')[1].value=null;
 
 }
 
