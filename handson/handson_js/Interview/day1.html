@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day1 interview questions</h1>
+    <p><b>1. Difference between “ == “ and “ === “ operators.</b></p>
+    <p>Both the operators are similarity operators, where double equal is 
+        used to compare only values and tripple equal is used to compare
+        both the value and datatype.
+    </p>
+    <pre>
+        const a =5;
+        const b='5';
+        const c='5';
+        console.log(a==b);// True
+        console.log(a===b);// False
+        console.log(b===c);// True
+    </pre>
+
+    <p><b>2. What is the spread operator?</b></p>
+    <p>Spread syntax (...) allows an iterable, such as an array or string, to be expanded in places 
+        where zero or more arguments (for function calls) or elements (for array literals) are expected.
+        In an object literal, the spread syntax enumerates the properties of an object and 
+        adds the key-value pairs to the object being created.
+    </p>
+    <pre>
+        const a=[5,6,7];
+        const b=[4,8];
+        const c=[...b,a];
+        console.log(c)// [4,8,5,6,7];
+    </pre>
+
+    <p><b>3. What are the differences between var, let and const?</b></p>
+    <p>var:
+        <ul>
+            <li>new value can be reassigned to the var variable</li>
+            <li>variables declared with var keyword comes under global scope.</li>
+            <li>var can be redeclared and initialized</li>
+            <li>var support hoisting</li>
+            <li>var can be declared in one line and can be intialized in another line</li>
+        </ul>
+        let:
+        <ul>
+            <li>new value can be reassigned to the let variable</li>
+            <li>variables declared with let keyword comes under block scope.</li>
+            <li>let can not be redeclared and initialized</li>
+            <li>let does not support hoisting</li>
+            <li>let can be declared in one line and can be intialized in another line</li>
+        </ul>
+        const: 
+        <ul>
+            <li>new value cannot be reassigned to keywthe const variable</li>
+            <li>variables declared with const keyword comes under block scope.</li>
+            <li>cont can not be redeclared and initialized</li>
+            <li>const does not support hoisting</li>
+            <li>const should be declared and initialized in the same line</li>
+        </ul>
+    </p>
+    <p><b>4. What is execution context</b></p>
+    <p>when we run the code, it creates an execution context in the call s tack.
+        it contains two phases. creation phase and execution phase. very first 
+        execution context invoked is called Global Execution context and every function 
+        in the code there by invokes another functional execution context.
+    </p>
+    <p><b>5. What is creation phase and execution phase?</b></p>
+    <p>in creation phase 
+        memory component is created and all the variables get undefined value. functions
+        get its code in curly braces as its value. in execution phase code component will get 
+        executed line by line and variables in memory component gets updated.
+    </p>
+    <p><b>6. What is meant by first class functions</b></p>
+    <p> First class functions are the functions which can be passed as an argument to 
+        another function , can be returned from another function and can be assigned to 
+        the variables.they are also called as first class citizens.
+    </p>
+    <p><b>7. What are closures? Give an example of closure</b></p>
+    <p>A closure is a function having access to the parent scope, even after the parent function
+        has closed. <br>
+        if we have nested functions. it is possible for an inner function  to use variables in 
+        outer function scope.
+    </p>
+    <pre> 
+        const outer = () => {
+            let counter = 0;
+            inner = function () {
+              return counter++;
+            };
+            return inner;
+          };
+          
+        const out = outer()
+        console.log(out()); // 0
+        console.log(out()); // 1
+    </pre>
+</body>
+</html>
