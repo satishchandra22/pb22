@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day3 Interview questions</h1>
+    <p><b>1. What are promises and why do we need them?</b></p>
+    <p> Promise objects are used to manage asynchronus operations. They are used to resolve api calls 
+        and also for call back hell. They contain three stages which are pending, resolved and rejected.
+        We can initialize a promise with resolve and reject statements and call them using .then() and 
+        .catch() methods. 
+    </p>
+    <p><b>2. What is the purpose of async/await keywords?</b></p>
+    <p>async/await key words are used for asynchronous operations. They are introdused in es8 vertion. 
+       they make promises esier to write. async used before a function. function with async keyword 
+       always returns a promise. await makes a function wait for the promise.
+    </p>
+    <p><b>3. What is hoisting?</b></p>
+    <p>var and regular function declarations are atomatically moved to the top of code while executing.
+       this is called hoisting. const andn let declarartions does not support hoisting. 
+    </p>
+    <p><b>4. What is the DOM?</b></p>
+    <p>DOM - short hand of Document Object Model. javascript treats HTML document as a logical tree  
+       structure and each node in the tree represents a html element. 
+    </p>
+    <p><b>5. Difference between undefined vs not defined vs NaN</b></p>
+    <p>undefined and not defined are data types where NaN is a property.
+       when ever we declare a variable, undefined is assigned to it until it get initialized. 
+       not defined is thrown by interpret when we try to access undeclared varible. 
+       NaN is thrown when you try to operate number methods on strings. it is a property to check
+       wether the given datatype is a number or not. 
+    </p>
+    <p><b>6. How many operators do we have in JS ?</b></p>
+    <p> we mainly have 6 operators
+        <ul>
+            <li>arthematic operators</li>
+            <li>aiignment operator</li>
+            <li>comparision operators</li>
+            <li>logical operators</li>
+            <li>Bitwise operator</li>
+            <li>ternary operator</li>
+
+        </ul>
+    </p>
+    <p><b>7. What is callback hell</b></p>
+    <p>call back hell is a nested asynchrous operations which depends on execution of other 
+       asynchronous opeartion. nested callback functions make programmer difficult to understand.
+    </p>
+    <pre>
+        let production = () =>{console.log("Numbers");
+        setTimeout(()=>{console.log("1")//prints after 1 sec
+            setTimeout(()=>{console.log("2")//prints after 2 secs
+                setTimeout(()=>{console.log("3")//prints after 3 secs
+                    setTimeout(()=>{console.log("4")//prints after 4 secs
+                        setTimeout(()=>{console.log("5")//prints after 5 secs
+                            setTimeout(()=>{console.log("6")//prints after 6 secs
+                                setTimeout(()=>{console.log("7")//prints after 7 secs
+                                },7000)//sets timeout interval as 7 secs
+                                },6000)//sets timeout interval as 6 secs
+                            },5000)//sets timeout interval as 5 secs
+                        },4000)//sets timeout interval as 4 secs
+                    },3000)//sets timeout interval as 3 secs
+                },2000)//sets timeout interval as 2 secs
+            },1000)//sets timeout interval as 1 sec
+        };
+        production()
+    </pre>
+    <p><b>8. What is promise chaining</b></p>
+    <p> promise chaining is producing series of promises to resolve call back hell. we will be writing 
+        a function that returns a promise and will call that function where ever we need that promise.
+    </p>
+    <pre>
+        let printNumber = ( time, num ) => {
+            return new Promise( ( resolve, reject )=>{
+                if( num ){setTimeout(()=>{resolve( num() )}, time)}
+                else{reject( console.log("No number") )}
+            })
+        }
+        printNumber( 0, ()=>console.log("Numbers"))//prints Numbers at 0thsec.
+        .then(()=>{return printNumber(1000,()=>console.log('1'))//prints 1after 1 secs
+          }).then(()=>{return printNumber(2000,()=>console.log('2'))//prints 2after 2 secs and so for others
+              }).then(()=>{return printNumber(3000,()=>console.log('3'))
+                  }).then(()=>{return printNumber(4000,()=>console.log('4'))
+                      }).then(()=>{return printNumber(5000,()=>console.log('5'))
+                           }).then(()=>{return printNumber(6000,()=>console.log('6'))
+                               }).then(()=>{return printNumber(7000,()=>console.log('7'))})
+    </pre>
+    <p>
+        <b>9. What are arrow functions?</b>
+    </p>
+    <p>arrow functions are short hand syntax for functional expressions. they assigned to variables.
+       they can also be used as anonymous functions.
+    </p>
+    <pre>
+        const a = ()=>{
+            // code
+        }
+        a()
+    </pre>
+    <p><b>10. Give an example of async/await</b></p>
+    <pre>
+        async function tryingPromises(){
+            console.log("I am inside the function using async/await");
+            const response = await fetch("https://api.github.com/users");
+            console.log("before the response is fetched");
+            const users = await response.json();
+            console.log("Users resolved");
+            return users;
+        }
+        console.log("Before calling the function");
+        let data = tryingPromises();
+        console.log("After calling the function");
+        console.log("data received",data);
+        data.then((res)=>{console.log(res);})
+        data.catch((err)=>{ console.log(err); })
+    </pre>
+</body>
+</html>
