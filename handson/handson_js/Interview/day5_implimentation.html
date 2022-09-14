@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Implimentation</title>
+</head>
+<body>
+    <h1> Day 5 - JS Implimentation</h1>
+    <p><b>1. Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button</b></p>
+    <h1 id="q1"></h1>
+    <button id="q1_button" onclick="q1_show()">click here</button>
+    <p><b>2. Write code to get 1st H1 element from a webpage using DOM</b></p>
+    <pre>
+        const element = document.getElementsByTagName('h1');
+        console.log(element[0])
+    </pre>
+    <p><b>3. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</b></p>
+    <p id="timer"></p>
+    <p><b>4. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</b></p>
+    <h2 id="q4">Hello world</h2>
+    <button id="q4_btn">Replace text</button>
+    <p><b>5. Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text</b></p>
+    <h2 id="q5">Hello world</h2>
+    <button id="q5_btn">Hide text</button>
+    <p><b>6. Given an array of 0's and 1's find out number of 0's</b></p>
+    <pre>
+        let a = [0,1,1,0,1,0,0,0,1];
+            let count = 0;
+            for (const i of a){
+                if (i === 0){
+                    count++;
+                }
+            }
+        console.log(a);
+    </pre>
+    <p><b>7. Given an array find out total no. of odd and even nos.</b></p>
+    <pre>
+        const b = [2 , 3, 64, 75, 14, 12];
+            let even_count=0;
+            for (const i of b){
+                if (i%2===0){
+                    even_count++;
+                }
+            }
+        console.log(even_count);
+        console.log(b.length - even_count);// odd count
+    </pre>
+    <p><b>8. Given a string find out number of vowels </b></p>
+    <pre>
+        const d = c.match(/['a','e','i','o','u' ]/g);
+        console.log(d.length);
+    </pre>
+    <p><b>9. Write a code to create two objects with 2 properties each, one will be string and other will be an array. Create a function to check if all the elements of the arrays in both the objects are same</b></p>
+    <pre>
+        
+        const e = {
+            string: 'codilbvijb',
+            array: [5,'fvi',66, 'kk']
+        }
+        const f = {
+            string: 'sivkuik',
+            array: [5,'fvi',66,'kk']
+        }
+        
+        function compare_array(a,b){
+            const a1 = a.array;
+            const b1 = b.array;
+            for (i=0;i < a1.length;i++){
+                if (a1[i]!=b1[i]){
+                    return 'False'
+                }
+            }
+            return 'True';
+        }
+        compare_array(e,f);
+
+    </pre>
+
+
+
+    <script src="day5.js"></script>
+</body>
+</html>

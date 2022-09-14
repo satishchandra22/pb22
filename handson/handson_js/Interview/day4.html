@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day 4 inetrview questions</h1>
+    <p><b>1. What is a Temporal Dead Zone?</b></p>
+    <p>Temporal dead zone is a block where let and const variables are stored
+        until they get intialized with a value. We can not access the variables
+        in temporal dead zone. if we try to access them , we get reference error.
+        one way to solve this problem is to move let and const declarations to 
+        the top of the block.
+    </p>
+    <p><b>2. What is the for-in loop in JavaScript? Give its syntax</b></p>
+    <p>for-in loop is a special for loop which iterates through indexes or 
+        keys of the object passed to it.
+    </p>
+    <pre>
+        for (const i in object){
+            //code
+        }
+    </pre>
+    <p><b>3. Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript</b></p>
+    <p>Local scope and functional scope are similar. all the varables declared inside a function 
+        and function parameters will have local scope, which meanse they can be accessed only inside the function.
+        variables declared inside a block can only be accessed inside that block which is called block scope.
+        When a variable is used in JavaScript, the JavaScript engine will try to find the variable's
+        value in the current scope. If it could not find the variable, it will look into the outer scope 
+        and will continue to do so until it finds the variable or reaches global scope. this is called 
+        scope chain.
+    </p>
+    <p><b>4. What is difference between null and undefined and where to use what?</b></p>
+    <p>undefined is a datatype which is assigned to the variables which are not initialized. undefined 
+        was assigned to all varibles in creation phase by interpreter. null is an user given value for 
+        a variable. null is also a datatype and we get true if we compare undefined to null with double
+        equal and false with triple equal.
+    </p>
+    <p><b>5. what is Symbol?</b></p>
+    <p>Symbol is a primitive datatype in javascript. each time you use a sysmbol, we get an unique value
+        assigned to the variable. 
+    </p>
+    <p><b>6. Write code to explain map and filter in arrays</b></p>
+    <p> map and filter are short hand notations of for loop.</p>
+    <pre>
+        const a = [1 , 2, 3];
+        const b = a.map(x=> x*2);
+        console.log(b)// [2,4,6];
+    </pre>
+    <pre>
+        const c = a.filter(x=> x>1);
+        console.log(c);// [2,3]
+    </pre>
+    <p><b>7. Explain passed by value and passed by reference</b></p>
+    <p> when ever we assign primitive datatypes to a new variable, it always creates a new copy of the value.
+        All the primitive datatypes are passed by the value. on otherhand, nonprimitive datatypes or objects
+        are passed by reference. whenevr you assign an object to a new variable, reference to that object 
+        is stored in that varible. 
+    </p>
+    <p><b>8. Please explain Self Invoking Function and its code</b></p>
+    <p>IIFE or immediatly invoked function expression are thr special functions which are invoked
+       only once without calling it. 
+    </p>
+    <pre>
+        (function () {
+            //code
+        })();
+    </pre>
+    <p><b>9. What is an event loop and call stack</b></p>
+    <p>Whenever we run an asychronous task in javascript, the task goes to web api's for serving its time.
+       after serving its time, task goes to witing queue. event loop keep's track of exrcution context
+       in call stack and push tasks in the waiting queue into call stack to get executed synchronously.
+    </p>
+</body>
+</html>
