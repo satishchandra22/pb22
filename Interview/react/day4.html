@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+<body>
+    <h1>Day 4 Interview questions - React</h1>
+    <p><b>1. What is UseRef Hook ?(Implementation)</b></p>
+    <p>The useRef Hook allows you to persist values between renders.
+
+        It can be used to store a mutable value that does not cause a re-render when updated.
+        
+        It can be used to access a DOM element directly.
+        
+    </p>
+
+    <p><img src="d41.png" alt=""></p>
+    <p>In above example, we can see that by using useRef hook, we are accessing DOM element directly</p>
+    <p><b>2. What is UseMemo Hook ?(Implementation)</b></p>
+    <p>useMemo hook is used to memorize importent values which are of high evaluation cost. we can 
+        memorize the value and can use it on every render.
+    </p>
+    <p><img src="d42.png" alt=""></p>
+    <p>In above example we are finding factorial of number and displaying it. When we type same number again
+        it will memorize the previous value and do not run factorial function again.
+    </p>
+
+    <p><b>3. What is Context api</b></p>
+    <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. </p>
+    <p><b>4. What are React Life cycles Explain each one with Example</b></p>
+    <p>Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+
+        The three phases are: Mounting, Updating, and Unmounting.
+        
+    </p>
+    <p>Mounting : constructor(),
+        getDerivedStateFromProps(),
+        render(),
+        componentDidMount()
+    </p>
+    <p>Updating : getDerivedStateFromProps(),
+        shouldComponentUpdate(),
+        render(),
+        getSnapshotBeforeUpdate(),
+        componentDidUpdate()
+    </p>
+    <p>
+        Unmounting : componentWillUnmount()
+    </p>
+
+    <p><b>5. What is Props Drilling Concept ?What is State Uplifting ?</b></p>
+    <p>Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level. 
+        In React, sharing state is accomplished by moving it up to the closest common ancestor of the components that need it. This is called “lifting state up”. 
+    </p>
+    <p><b>6. Difference between useEffect and useContext ?</b></p>
+    <p>UseEffect hook is used to mimic life cycle methods such as shouldComponentUpdate(), componentDidMount(), componentWillUnmount(). whwre as useContex hook is used to pass props directly to the child element in deeply nested tree structure.</p>
+    <p><b>7. Difference between callback and useCallback Hook ?</b></p>
+    <p>callback is a function given as argument to another function. useCallback hook is used to memeroze a callback function which can be executed based on changes in given dependencies. </p>
+</body>
+</html>
