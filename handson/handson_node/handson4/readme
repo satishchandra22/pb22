@@ -1,0 +1,2 @@
+This file contains backend server javascript file containing login sign up schema.
+passwords are hashed using Bcrypt Algorithm and tokens are generated after sucessful login.
