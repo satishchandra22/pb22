@@ -345,9 +345,8 @@ h1 {
 }
 
 .project6 {
-    background-image: url(./images/project-6.png);
-    background-size: 700px;
-    background-position-y: 30px;
+    background-image: url(4.png);
+     background-size: cover;
 }
 
 .fourthree {
